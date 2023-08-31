@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Cubic Admin Template</title>
+    <!-- ===== Bootstrap CSS ===== -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ===== Custom CSS ===== -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- ===== Color CSS ===== -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="mini-sidebar fix-sidebar">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- ===== Top-Navigation ===== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <a class="navbar-toggle font-20 hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="top-left-part">
+                    <a class="logo" href="index.html">
+                        <b>
+                            <img src="../plugins/images/logo.png" alt="home" />
+                        </b>
+                        <span>
+                            <img src="../plugins/images/logo-text.png" alt="homepage" class="dark-logo" />
+                        </span>
+                    </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li>
+                        <a href="javascript:void(0)" class="sidebartoggler font-20 waves-effect waves-light"><i class="icon-arrow-left-circle"></i></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li class="right-side-toggle">
+                        <a class="right-side-toggler waves-effect waves-light b-r-0 font-20" href="javascript:void(0)">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ===== Top-Navigation-End ===== -->
+        <!-- ===== Left-Sidebar ===== -->
+        <aside class="sidebar" role="navigation">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav m-t-40">
+                    <ul id="side-menu">
+                        <li>
+                            <a class="active waves-effect" href="javascript:void(0);" aria-expanded="false"><i class="icon-fire fa-fw"></i> <span class="hide-menu"> Documentation </span></a>
+                            <ul aria-expanded="false" class="collapse in">
+                                <li class="menu">
+                                    <a href="#intro">Introduction</a>
+                                </li>
+                                <li class="menu">
+                                    <a href="#fs">Folder Structure</a>
+                                </li>
+                                <li class="menu">
+                                    <a href="#hs">Html Structure</a>
+                                </li>
+                                <li class="menu">
+                                    <a href="#cv">Color Variations</a>
+                                </li>
+                                <li class="menu">
+                                    <a href="#lc">Less-Css</a>
+                                </li>
+                                <li class="menu">
+                                    <a href="#jf">Javascript Files</a>
+                                </li>
+                                <li class="menu">
+                                    <a href="#cr">Credits</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- ===== Left-Sidebar-End ===== -->
+        <!-- Page Content -->
+        <div class="page-wrapper">
+            <div class="container-fluid docs">
+                <!--row-->
+                <div class="row" id="intro">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Introduction</h3>
+                            <p>Cubic Admin is a webapp template for admin dashboards and control panels. It is a responsive HTML template that is based on the CSS framework Bootstrap 3.3.7. It utilizes all of the Bootstrap components in its design and re-styles many commonly used plugins to create a consistent design that can be used as a user interface for backend applications.</p>
+                            <hr>
+                            <h3 class="box-title">Installation</h3>
+                            <i class="fa fa-folder text-warning"></i> <strong>cubic-html</strong> + <i class="fa fa-folder text-warning"></i> <strong>plugins (Required)</strong>
+                            <strong>= done.</strong>
+                            <hr>
+                            <h3 class="box-title">Template Structure</h3>
+                            <p>All template files have fixed structure consisting of <code>.navbar-header</code>, <code>.sidebar</code> <code>.page-wrapper</code>, <code>.footer</code></p> <img src="../plugins/images/docs/template-structure.png" class="img-responsive" />
+                            <hr>
+                            <h3 class="box-title">Begining of Page</h3>
+                            <p>Below code is used at the beginning of all HTML pages.</p>
+                            <pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;../plugins/images/favicon.png&quot;&gt;
+
+    &lt;title&gt;Cubic Admin Template&lt;/title&gt;
+
+    &lt;!-- ===== Bootstrap CSS ===== --&gt;
+    &lt;link href=&quot;bootstrap/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- ===== Plugin CSS (if any) ===== --&gt;
+   
+    &lt;!-- ===== Animation CSS ===== --&gt;
+    &lt;link href=&quot;css/animate.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- ===== Custom CSS ===== --&gt;
+    &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- ===== Color CSS ===== --&gt;
+    &lt;link href=&quot;css/colors/default.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+                            </pre>
+                            <hr>
+                            <h3 class="box-title">Preloader (Spinner)</h3>
+                            <p>Below code is used to load spinner for the template.</p>
+                            <pre class="prettyprint">&lt;!-- Preloader --&gt;
+&lt;div class="preloader"&gt;
+  &lt;div class="cssload-speeding-wheel"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                            </pre>
+                            <hr>
+                            <h3 class="box-title">Logo</h3>
+                            <p>Below code is used for logo. You can change it by text or image or icon. If your image height is bigger than 60px, you need to resize your logo or give height="60" to your logo img tag.</p>
+                            <pre class="prettyprint">
+&lt;a class=&quot;logo&quot; href=&quot;index.html&quot;&gt;
+    &lt;b&gt;
+        &lt;img src=&quot;../plugins/images/logo.png&quot; alt=&quot;home&quot; /&gt;
+    &lt;/b&gt;
+    &lt;span&gt;
+        &lt;img src=&quot;../plugins/images/logo-text.png&quot; alt=&quot;homepage&quot; class=&quot;dark-logo&quot; /&gt;
+    &lt;/span&gt;
+&lt;/a&gt;                
+                            </pre>
+                            <hr>
+                            <h3 class="box-title">Left Sidebar Menu</h3>
+                            <p>Below code is used for left sidebar menu</p>
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8"><pre class="prettyprint">
+&lt;!-- ===== Left-Sidebar ===== --&gt;
+&lt;aside class=&quot;sidebar&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;scroll-sidebar&quot;&gt;
+        &lt;div class=&quot;user-profile&quot;&gt;
+            &lt;div class=&quot;dropdown user-pro-body&quot;&gt;
+                &lt;div class=&quot;profile-image&quot;&gt;
+                    &lt;img src=&quot;../plugins/images/users/hanna.jpg&quot; alt=&quot;user-img&quot; class=&quot;img-circle&quot;&gt;
+                    &lt;a href=&quot;javascript:void(0);&quot; class=&quot;dropdown-toggle u-dropdown text-blue&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                        &lt;span class=&quot;badge badge-danger&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;
+                        &lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;ul class=&quot;dropdown-menu animated flipInY&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; Profile&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;&lt;i class=&quot;fa fa-inbox&quot;&gt;&lt;/i&gt; Inbox&lt;/a&gt;&lt;/li&gt;
+                        &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;&lt;i class=&quot;fa fa-cog&quot;&gt;&lt;/i&gt; Account Settings&lt;/a&gt;&lt;/li&gt;
+                        &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-power-off&quot;&gt;&lt;/i&gt; Logout&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;p class=&quot;profile-text m-t-15 font-16&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt; Hanna Gover&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;nav class=&quot;sidebar-nav&quot;&gt;
+            &lt;ul id=&quot;side-menu&quot;&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;active waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-screen-desktop fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Dashboard &lt;span class=&quot;label label-rounded label-info pull-right&quot;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt; &lt;a href=&quot;index.html&quot;&gt;Modern Version&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;index2.html&quot;&gt;Clean Version&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;index3.html&quot;&gt;Analytical Version&lt;/a&gt; &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-basket fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; eCommerce &lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt; &lt;a href=&quot;index4.html&quot;&gt;Dashboard&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;products.html&quot;&gt;Products&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;product-detail.html&quot;&gt;Product Detail&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;product-edit.html&quot;&gt;Product Edit&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;product-orders.html&quot;&gt;Product Orders&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;product-cart.html&quot;&gt;Product Cart&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;product-checkout.html&quot;&gt;Product Checkout&lt;/a&gt; &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-envelope-letter fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Inbox &lt;span class=&quot;label label-rounded label-primary pull-right&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt; &lt;a href=&quot;inbox.html&quot;&gt;Mail Box&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;inbox-detail.html&quot;&gt;Mail Details&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;compose.html&quot;&gt;Compose Mail&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;contact-detail.html&quot;&gt;Contact Detail&lt;/a&gt; &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-equalizer fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; UI Elements&lt;span class=&quot;label label-rounded label-danger pull-right&quot;&gt;18&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;panels-wells.html&quot;&gt;Panels and Wells&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;panel-ui-block.html&quot;&gt;Panels With BlockUI&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;portlet-draggable.html&quot;&gt;Draggable Portlet&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;buttons.html&quot;&gt;Buttons&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;tabs.html&quot;&gt;Tabs&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;modals.html&quot;&gt;Modals&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;progressbars.html&quot;&gt;Progress Bars&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;notification.html&quot;&gt;Notifications&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;carousel.html&quot;&gt;Carousel&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;user-cards.html&quot;&gt;User Cards&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;timeline.html&quot;&gt;Timeline&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;timeline-horizontal.html&quot;&gt;Horizontal Timeline&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;range-slider.html&quot;&gt;Range Slider&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;ribbons.html&quot;&gt;Ribbons&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;steps.html&quot;&gt;Steps&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;session-idle-timeout.html&quot;&gt;Session Idle Timeout&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;session-timeout.html&quot;&gt;Session Timeout&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;bootstrap.html&quot;&gt;Bootstrap UI&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-notebook fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Forms &lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;form-basic.html&quot;&gt;Basic Forms&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;form-layout.html&quot;&gt;Form Layout&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;icheck-control.html&quot;&gt;Icheck Control&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;form-advanced.html&quot;&gt;Form Addons&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;form-upload.html&quot;&gt;File Upload&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;form-dropzone.html&quot;&gt;File Dropzone&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;form-pickers.html&quot;&gt;Form-pickers&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-grid fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Tables&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;basic-table.html&quot;&gt;Basic Tables&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;table-layouts.html&quot;&gt;Table Layouts&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;data-table.html&quot;&gt;Data Table&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;bootstrap-tables.html&quot;&gt;Bootstrap Tables&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;responsive-tables.html&quot;&gt;Responsive Tables&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;editable-tables.html&quot;&gt;Editable Tables&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-pie-chart fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Charts&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;morris-chart.html&quot;&gt;Morris Chart&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;peity-chart.html&quot;&gt;Peity Charts&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;knob-chart.html&quot;&gt;Knob Charts&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;sparkline-chart.html&quot;&gt;Sparkline charts&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;widgets.html&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-settings fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Widgets &lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-bulb fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Icons&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt; &lt;a href=&quot;simple-line.html&quot;&gt;Simple Line&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;fontawesome.html&quot;&gt;Fontawesome&lt;/a&gt; &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-location-pin fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Maps&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt; &lt;a href=&quot;map-google.html&quot;&gt;Google Map&lt;/a&gt; &lt;/li&gt;
+                        &lt;li&gt; &lt;a href=&quot;map-vector.html&quot;&gt;Vector Map&lt;/a&gt; &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a class=&quot;waves-effect&quot; href=&quot;javascript:void(0);&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-docs fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt; Pages&lt;span class=&quot;label label-rounded label-success pull-right&quot;&gt;18&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                        &lt;li&gt; &lt;a href=&quot;javascript:void(0);&quot;&gt;Error Pages&lt;/a&gt;
+                            &lt;ul aria-expanded=&quot;false&quot; class=&quot;collapse&quot;&gt;
+                                &lt;li&gt; &lt;a href=&quot;400.html&quot;&gt;400&lt;/a&gt; &lt;/li&gt;
+                                &lt;li&gt; &lt;a href=&quot;403.html&quot;&gt;403&lt;/a&gt; &lt;/li&gt;
+                                &lt;li&gt; &lt;a href=&quot;404.html&quot;&gt;404&lt;/a&gt; &lt;/li&gt;
+                                &lt;li&gt; &lt;a href=&quot;500.html&quot;&gt;404&lt;/a&gt; &lt;/li&gt;
+                                &lt;li&gt; &lt;a href=&quot;503.html&quot;&gt;404&lt;/a&gt; &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;starter-page.html&quot;&gt;Starter Page&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;blank.html&quot;&gt;Blank Page&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;search-result.html&quot;&gt;Search Result&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;custom-scroll.html&quot;&gt;Custom Scrolls&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;login.html&quot;&gt;Login Page&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;lock-screen.html&quot;&gt;Lock Screen&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;recoverpw.html&quot;&gt;Recover Password&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;animation.html&quot;&gt;Animations&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;profile.html&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;invoice.html&quot;&gt;Invoice&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;gallery.html&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;pricing.html&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;register.html&quot;&gt;Register&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;calendar.html&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;icon-calender fa-fw&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hide-menu&quot;&gt;Calendar&lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;div class=&quot;p-30&quot;&gt;
+            &lt;span class=&quot;hide-menu&quot;&gt;
+                &lt;a href=&quot;javascript:void(0);&quot; target=&quot;_blank&quot; class=&quot;btn btn-success&quot;&gt;Buy Cubic Admin&lt;/a&gt;
+                &lt;a href=&quot;javascript:void(0);&quot; target=&quot;_blank&quot; class=&quot;btn btn-default m-t-15&quot;&gt;Check Documentation&lt;/a&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/aside&gt;
+&lt;!-- ===== Left-Sidebar-End ===== --&gt;
+    </pre> </div>
+                                <div class="col-md-4 col-sm-4"><img src="../plugins/images/docs/sidebar.png" alt="sidebar" /></div>
+                            </div>
+                            <hr>
+                            <h3 class="box-title">Page Content, Right Sidebar and Footer</h3>
+                            <p>Below code is used for page content, right sidebar and footer in all pages.</p> <pre class="prettyprint">
+&lt;!-- Page Content --&gt;
+         &lt;div class="page-wrapper"&gt;
+            &lt;div class="container-fluid"&gt;
+               &lt;!-- .Your content row --&gt;
+               &lt;div class="row"&gt;
+                  &lt;div class="col-md-12"&gt;
+                     &lt;div class="white-box"&gt;
+                        &lt;h4 class="box-title"&gt;Blank Starter page&lt;/h4&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;!-- /.Your content row --&gt;
+               &lt;!-- .right-sidebar --&gt;
+               &lt;div class="right-sidebar"&gt;
+                  &lt;div class="slimscrollright"&gt;
+                     &lt;div class="rpanel-title"&gt; Service Panel &lt;span&gt;&lt;i class="ti-close right-side-toggle"&gt;&lt;/i&gt;&lt;/span&gt; &lt;/div&gt;
+                     &lt;div class="r-panel-body"&gt;
+                        
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;!-- /.right-sidebar --&gt;
+            &lt;/div&gt;
+            &lt;!-- /.container-fluid --&gt;
+            &lt;footer class="footer text-center"&gt; 2017 &copy; Cubic Admin by themedesigner.in &lt;/footer&gt;
+         &lt;/div&gt;
+         &lt;!-- /page-wrapper --&gt;
+</pre>
+                            <hr>
+                            <h3 class="box-title">Theme Options (custom.js)</h3>
+                            <p>Below js code is used for theme setting, fix header, fix sidebar and right sidebar open-close.</p> <pre class="prettyprint">
+// ============================================================== 
+// Theme options
+// ==============================================================     
+$(".sidebartoggler").on('click', function() {
+    if ($("body").hasClass("mini-sidebar")) {
+        $("body").trigger("resize");
+        $(".scroll-sidebar, .slimScrollDiv").css("overflow", "hidden").parent().css("overflow", "visible");
+        $("body").removeClass("mini-sidebar");
+        $('.top-left-part span').show();
+        $(".sidebartoggler i").addClass("fa fa-bars");
+    } else {
+        $("body").trigger("resize");
+        $(".scroll-sidebar, .slimScrollDiv").css("overflow-x", "visible").parent().css("overflow", "visible");
+        $("body").addClass("mini-sidebar");
+        $('.top-left-part span').hide();
+        $(".sidebartoggler i").removeClass("fa fa-bars");
+    }
+});
+
+// ============================================================== 
+// Right sidebar options
+// ============================================================== 
+$(".right-side-toggler").click(function() {
+    $(".right-sidebar").slideDown(50);
+    $(".right-sidebar").toggleClass("shw-rside");
+    // Fix header
+    $(".fxhdr").click(function() {
+        $("body").toggleClass("fix-header");
+    });
+    // Fix sidebar
+    $(".fxsdr").click(function() {
+        $("body").toggleClass("fix-sidebar");
+    });
+});
+</pre>
+                            <hr>
+                            <h3 class="box-title">Sidebar Navigation & Responsiveness Across All Devices</h3>
+                            <p>Below js code is used for sidebar open-close, changing viewport size in all devices and toggle sidebar.</p> <pre class="prettyprint">
+var set = function() {
+    var width = (window.innerWidth > 0) ? window.innerWidth : this.screen.width;
+    var topOffset = 60;
+    if (width < 1170) {
+        $("body").addClass("mini-sidebar");
+        $('.top-left-part span').hide();
+        $(".scroll-sidebar, .slimScrollDiv").css("overflow-x", "visible").parent().css("overflow", "visible");
+        $(".sidebartoggler i").addClass("fa fa-bars");
+    } else {
+        $("body").removeClass("mini-sidebar");
+        $('.top-left-part span').show();
+        $(".sidebartoggler i").removeClass("fa fa-bars");
+    }
+
+    var height = ((window.innerHeight > 0) ? window.innerHeight : this.screen.height) - 1;
+    height = height - topOffset;
+    if (height < 1) height = 1;
+    if (height > topOffset) {
+        $(".page-wrapper").css("min-height", (height) + "px");
+    }
+};
+$(window).ready(set);
+$(window).on("resize", set);
+
+// this is for close icon when navigation open in mobile view
+$(".navbar-toggle").click(function() {
+    $("body").toggleClass("show-sidebar");
+    $(".navbar-toggle i").toggleClass("fa-bars");
+    $(".navbar-toggle i").addClass("fa-close");
+});
+$(".sidebartoggler").on('click', function() {
+    $(".sidebartoggler i").toggleClass("fa fa-bars");
+});
+
+// ============================================================== 
+// Auto select left navbar
+// ============================================================== 
+$(function() {
+    var url = window.location;
+    var element = $('ul#side-menu a').filter(function() {
+        return this.href == url;
+    }).addClass('active').parent().addClass('active');
+    while (true) {
+        if (element.is('li')) {
+            element = element.parent().addClass('in').parent();
+        } else {
+            break;
+        }
+    }
+});
+</pre>
+                            <hr>
+                            <h3 class="box-title">Font Family</h3>
+                            <p>Change the font family of template by simply changing the google font url and @basefont1 variable in variable.less file.</p> <pre class="prettyprint">
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@basefont1: 'Open Sans', sans-serif;
+</pre>
+                            <hr>
+                            <h3 class="box-title">Css</h3>
+                            <p>We made 6 different less files for customization.</p> <pre class="prettyprint">
+variable.less (includes all variables of the template)
+common.less (includes all common elements)
+app.less (includes all dashboard elements/widgets)
+pages.less (includes each page styles)
+widget.less (includes innerpage widgets)
+responsive.less (includes responsive layout of the template)
+</pre>
+                            <hr>
+                            <h3 class="box-title">Starter Page</h3>
+                            <p>You can start your new project with starter-page.html. In that page, all the unnecessary script and html code is removed, so you can start fresh.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <!--row-->
+                <div class="row" id="fs">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 class="box-title" id="structure">Folder Structure</h3> <pre>
+                <p>
+                  Root
+                  ├── 
+                  │   └── cubic-html/
+                  │       └── Css
+                  │            └── All Css files
+                  │       └── Js
+                  │            └── All Js files
+                  │       └── Less
+                  │            └── All Less files
+                  │       └── Bootstrap
+                  │            └── Bootstrap 3.3.7 files
+                  │       └── All Html Pages
+                  │
+                  │   └── Plugins/
+                  │       └── components
+                  │            └── All Required plugins files
+                  │       └── Images
+                  │             └── All Theme Images
+                  └── 
+                </p>
+              </pre> </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <!--row-->
+                <div class="row" id="hs">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 class="box-title" id="html">Html Structure</h3> <pre class="prettyprint">
+&lt;body&gt;
+
+<span style="color:#ccc;">&lt;!-- Preloader --&gt;</span>
+&lt;div class="preloader"&gt;
+&lt;div class="cssload-speeding-wheel"&gt;&lt;/div&gt;
+&lt;/div&gt;
+<span style="color:#ccc;">&lt;!-- End Preloader --&gt;</span>
+
+<span style="color:#ccc;">&lt;!-- Wrapper --&gt;</span>
+&lt;div id="wrapper"&gt;
+
+    <span style="color:#ccc;">&lt;!-- Top Section --&gt;</span>
+    &lt;nav class="navbar navbar-default navbar-static-top"&gt;
+
+    <span style="color:#ccc;">&lt;!-- Your Logo --&gt;</span>
+    &lt;div class="top-left-part"&gt;
+      &lt;a href="index.html" class="logo"&gt; ... &lt;/a&gt; 
+    &lt;/div&gt;
+    <span style="color:#ccc;">&lt;!-- End Your Logo --&gt;</span>
+    &lt;/nav&gt;
+    <span style="color:#ccc;">&lt;!-- Top Section End --&gt;</span>
+
+    <span style="color:#ccc;">&lt;!-- Left Navigation --&gt;</span>
+    &lt;div class="navbar-default sidebar slimscroll"&gt; &lt;/div&gt;
+    <span style="color:#ccc;">&lt;!-- Left Navigation End --&gt;</span>
+
+    <span style="color:#ccc;">&lt;!-- Main Content --&gt;</span>
+    <span style="color:#ccc;">&lt;!-- Start Page wrapper --&gt;</span>
+    &lt;div class="page-wrapper"&gt;
+       <span style="color:#ccc;">&lt;!-- Start Container --&gt;</span>
+      &lt;div class="container-fluid"&gt; ... &lt;/div&gt;
+       <span style="color:#ccc;">&lt;!-- End container --&gt;</span>
+    &lt;/div&gt;
+    <span style="color:#ccc;">&lt;!-- End Page wrapper --&gt;</span>
+
+    <span style="color:#ccc;">&lt;!-- footer --&gt;</span>
+    &lt;footer class="footer text-center"&gt; 2017 © cubic admin by themedesigner.in &lt;/footer&gt;
+    <span style="color:#ccc;">&lt;!-- End footer --&gt;</span>
+
+&lt;/div&gt;
+<span style="color:#ccc;">&lt;!-- End Wrapper --&gt;</span>
+
+&lt;/body&gt;
+&lt;/html&gt;
+              </pre> </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <!--row-->
+                <div class="row" id="cv">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 class="box-title" id="colors">Color Variations</h3>
+                            <p>Replace color css from head section with any of the options availabel from below.</p>
+                            <pre class="prettyprint">
+&lt;link href="css/colors/default.css" id="theme" rel="stylesheet"&gt;
+
+&lt;link href="css/colors/green.css" id="theme" rel="stylesheet"&gt;
+
+&lt;link href="css/colors/red.css" id="theme" rel="stylesheet"&gt;
+
+&lt;link href="css/colors/yellow.css" id="theme" rel="stylesheet"&gt;
+
+&lt;link href="css/colors/purple.css" id="theme" rel="stylesheet"&gt;
+
+&lt;link href="css/colors/black.css" id="theme" rel="stylesheet"&gt; 
+                            </pre>
+                            <h3 class="box-title m-t-40" id="colors">Layout</h3>
+                            <p>Add following classes in the body tag to fix sidebar and header.</p>
+                            <p>To <b>fix header</b> add <code>.fix-header</code> class in the body tag.</p>
+                            <p>To <b>fix sidebar</b> add <code>.fix-sidebar</code> class to the body tag.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <!--row-->
+                <div class="row" id="lc">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 class="box-title" id="less">Less - Css</h3>
+                            <table class="table table-bordered m-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20%;">File</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>bootstrap.css</code> </td>
+                                        <td> bootstrap v3.3.7 </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>spinners.css</code>/<code>spinners.css</code> </td>
+                                        <td> This file is has preloader css. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>common.less</code>/<code>common.css</code> </td>
+                                        <td> This file has all the common classes for the template.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>app.less</code>/<code>app.css</code> </td>
+                                        <td> This file has all the dashboard widget's styles for the template.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>variable.less</code>/<code>variable.css</code> </td>
+                                        <td> This file has all the predefine less variables for the template. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>sidebar-nav.less</code>/<code>sidebar-nav.css</code> </td>
+                                        <td> this file has sidebar related css code. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>widgets.less</code>/<code>widgets.css</code> </td>
+                                        <td> This file has all other widget's styles. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>responsive.less</code>/<code>responsive.css</code> </td>
+                                        <td> This file has all the responsive styles. </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <!--row-->
+                <div class="row" id="jf">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 class="box-title" id="js">Js Files</h3>
+                            <table class="table table-bordered m-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">File</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>jquery.js</code>, <code>bootstrap.js</code>, <code>jquery.slimscroll.js</code> </td>
+                                        <td> These files are the core js files of the theme. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>custom.js</code> </td>
+                                        <td> This file has all the custom javascript for the theme.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>sidebarmenu.js</code> </td>
+                                        <td> This file contains sidebar navigation javascript.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>wave.js</code> </td>
+                                        <td> This is used for wave effects on buttons and other elements.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <!--row-->
+                <div class="row" id="cr">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h3 class="box-title" id="creadit">Credits</h3>
+                            <ul class="common">
+                                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                                <li><a href="https://jquery.com/">Jquery</a></li>
+                                <li><a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
+                                <li><a href="http://tristanedwards.me/sweetalert">Sweet-Alert</a></li>
+                                <li><a href="http://arshaw.com/fullcalendar/">Full Calendar</a></li>
+                                <li><a href="http://jdewit.github.com/bootstrap-timepicker">Bootstrap-timepicker</a></li>
+                                <li><a href="http://www.eyecon.ro/bootstrap-colorpicker">Bootstrap Colorpicker</a></li>
+                                <li><a href="https://select2.github.io/">Select2</a></li>
+                                <li><a href="https://www.datatables.net">Datatables</a></li>
+                                <li><a href="http://morrisjs.github.io/morris.js/">Morris</a></li>
+                                <li><a href="http://omnipotent.net/jquery.sparkline/">Sparkline</a> </li>
+                                <li><a href="https://hpneo.github.io/gmaps/">Gmaps</a></li>
+                                <li><a href="http://jqvmap.com">Vector Maps</a></li>
+                                <li><a href="https://unsplash.com/">Unsplash (images)</a></li>
+                                <li><a href="https://themify.me/themify-icons">Themify-icons</a></li>
+                                <li><a href="https://github.com/abpetkov/switchery"> Switchery</a></li>
+                                <li><a href="https://github.com/silviomoreto/bootstrap-select"> Bootstrap select</a></li>
+                                <li><a href="https://github.com/wenzhixin/bootstrap-table-examples"> Bootstrap tables</a></li>
+                                <li><a href="https://gionkunz.github.io/chartist-js/"> Chartist chart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+                <!-- ===== Right-Sidebar ===== -->
+                <div class="right-sidebar">
+                    <div class="slimscrollright">
+                        <div class="rpanel-title"> Service Panel <span><i class="icon-close right-side-toggler"></i></span> </div>
+                        <div class="r-panel-body">
+                            <ul class="hidden-xs">
+                                <li><b>Layout Options</b></li>
+                                <li>
+                                    <div class="checkbox checkbox-danger">
+                                        <input id="headcheck" type="checkbox" class="fxhdr">
+                                        <label for="headcheck"> Fix Header </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox checkbox-warning">
+                                        <input id="sidecheck" type="checkbox" class="fxsdr">
+                                        <label for="sidecheck"> Fix Sidebar </label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul id="themecolors" class="m-t-20">
+                                <li><b>With Light sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme working">1</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                                <li><a href="javascript:void(0)" data-theme="yellow" class="yellow-theme">3</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">4</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                                <li><a href="javascript:void(0)" data-theme="black" class="black-theme">6</a></li>
+                                <li class="db"><b>With Dark sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
+                                <li><a href="javascript:void(0)" data-theme="yellow-dark" class="yellow-dark-theme">9</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">10</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" data-theme="black-dark" class="black-dark-theme">12</a></li>
+                            </ul>
+                            <ul class="m-t-20 chatonline">
+                                <li><b>Chat option</b></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../plugins/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===== Right-Sidebar-End ===== -->
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer t-a-c">
+                © 2017 Cubic Admin by themedesigner.in
+            </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--Style Switcher -->
+    <script src="../plugins/components/styleswitcher/jQuery.style.switcher.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+        "use strict";
+        jQuery(document).on('click', '.menu a', function(event) {
+            event.preventDefault();
+            var target = this.getAttribute('href');
+            jQuery('html, body').animate({
+                scrollTop: jQuery(target).offset().top - 100
+            }, 1000);
+        });
+    });
+    </script>
+</body>
+
+</html>
